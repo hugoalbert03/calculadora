@@ -32,7 +32,12 @@ section{
 }
 
 #clear:hover{
-    background:rgb(190, 62, 62);
+    background: -webkit-linear-gradient(270deg,#fa5757,#be3e3b,#fa5757);
+    /* background:#be3e3e; */
+}
+
+button{
+    cursor:pointer;
 }
 
 button,#visor{
@@ -59,9 +64,10 @@ table{
 }
 
 .op{
-    background:yellow;
+    background:#ffff00;
 }
 
 .op:hover{
-    background-color: rgb(173, 173, 0);
+    background: -webkit-linear-gradient(270deg,#eeee00,#cccc00,#eeee00);
+    /* background-color: #adad00; */
 }
