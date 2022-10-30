@@ -1,39 +1,54 @@
+/*Estrutura*/
 body{
+    height:100%;
+    background: #3a3a3a;
+}
+
+/*section{
+    background-color: #f5f5f5;
+    margin:3rem 20px;
+}*/
+
+table{
+    width:100%;
     height:100%;
 }
 
-section{
-    background-color: #f5f5f5;
-}
-
+/*Resultado*/
 #visor{
     width:100%;
     background:rgb(0, 255, 0);
     text-align:right;
-    margin:1rem 0rem;
+    margin:1rem auto;
     overflow:none;
-}
-
-#val{
+    resize:none;
     font-size:30pt;
-    padding:0 1rem
+    /* padding:0 1rem; */
+}
+#val{
+    
 }
 
+/*Botões*/
+
+/*confirm*/
 #confirm{
-    background:#00ffb3;
+    background:-webkit-linear-gradient(270deg,#01eca6,#02bb84,#01eca6);
 }
 
 #confirm:hover{
-    background:#02bb84;
+    background:#00ffb3;
+    color:black;
 }
 
+/*clear*/
 #clear{
-    background:#fa5757;
+    background: -webkit-linear-gradient(270deg,#fa5757,#be3e3b,#fa5757);
+    /* background:#be3e3e; */
 }
 
 #clear:hover{
-    background: -webkit-linear-gradient(270deg,#fa5757,#be3e3b,#fa5757);
-    /* background:#be3e3e; */
+    background:#fa5757;
 }
 
 button{
@@ -48,26 +63,31 @@ button,#visor{
     font-size:16pt;
 }
 
-button:hover{
-    background:#9e9e9e;
+.numb,.op,#clear,#confirm{
     color:#ffffff;
     border:groove 1px black;
 }
 
-section{
-    margin:0px 90px;
+.numb{
+    background: -webkit-linear-gradient(270deg,#cecece,#9e9e9e,#cecece);
 }
 
-table{
-    width:100%;
-    height:100%;
+.numb:hover{
+    background:#dbdbdb;
 }
 
-.op{
-    background:#ffff00;
+
+
+
+.op:hover,#clear:hover,.numb:hover{
+    color:black;
 }
 
 .op:hover{
-    background: -webkit-linear-gradient(270deg,#eeee00,#cccc00,#eeee00);
+    background:#ffff00;
+}
+
+.op{
+    background: -webkit-linear-gradient(270deg,#f3f300,#d6d600,#f3f300);
     /* background-color: #adad00; */
 }

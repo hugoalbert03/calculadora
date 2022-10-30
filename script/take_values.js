@@ -1,8 +1,8 @@
-var tela = document.getElementById("val").innerHTML = 0
+var tela = document.getElementById("visor").innerHTML = 0
 var v1 = undefined;
 var v2 = undefined;
 function btn1(){
-    
+
 }
 
 function btn2(){
@@ -35,4 +35,8 @@ function btn8(){
 
 function btn9(){
     
+}
+
+function confirm(){
+
 }
