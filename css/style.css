@@ -16,17 +16,21 @@ table{
 
 /*Resultado*/
 #visor{
-    width:100%;
-    background:rgb(0, 255, 0);
+    background:-webkit-linear-gradient(270deg,#0095cf,#00b7ff,#0095cf);
     text-align:right;
-    margin:1rem auto;
     overflow:none;
     resize:none;
-    font-size:30pt;
+    width:auto;
     /* padding:0 1rem; */
 }
-#val{
-    
+
+#visor:hover{
+    background:#00b7ff;
+    border:ridge 1px black;
+}
+
+#vcamp{
+    padding:2rem 1rem;
 }
 
 /*Botões*/
