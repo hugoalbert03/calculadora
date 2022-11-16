@@ -10,9 +10,12 @@
     <body>
         <section>
             <div id="vcamp">
-                <textarea id="visor" style="font-size:30pt;"></textarea>
+                <textarea id="visor" style="font-size:30pt;" desabled=""></textarea>
             </div>
-            <table>
+            <div style="text-align:center;">
+                <input type="button" id="vw" value="Esconder Teclas" onclick="view()">
+            </div>
+            <table id="botoes">
                 <tr>
                     <td>
                         <button class="op" id="div">/</button>
@@ -21,7 +24,7 @@
                         <button class="op" id="mod">%</button>
                     </td>
                     <td colspan="2">
-                        <button id="clear">&#x2190;</button>
+                        <button id="clear" onclick="clean()">&#x2190;</button>
                     </td>
                 </tr>
                 <tr>
