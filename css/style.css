@@ -18,7 +18,6 @@ table{
 #visor{
     background:-webkit-linear-gradient(270deg,#0095cf,#00b7ff,#0095cf);
     text-align:right;
-    overflow:none;
     resize:none;
     width:auto;
     /* padding:0 1rem; */
@@ -46,12 +45,12 @@ table{
 }
 
 /*clear*/
-#clear{
+.clean{
     background: -webkit-linear-gradient(270deg,#fa5757,#be3e3b,#fa5757);
     /* background:#be3e3e; */
 }
 
-#clear:hover{
+.clean:hover{
     background:#fa5757;
 }
 
@@ -67,24 +66,24 @@ button,#visor{
     font-size:16pt;
 }
 
-.numb,.op,#clear,#confirm{
+.numb,.op,.clean,#confirm{
     color:#ffffff;
     border:groove 1px black;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 .numb{
     background: -webkit-linear-gradient(270deg,#cecece,#9e9e9e,#cecece);
+    
 }
 
 .numb:hover{
     background:#dbdbdb;
 }
 
-
-
-
-.op:hover,#clear:hover,.numb:hover{
+.op:hover,.clean:hover,.numb:hover{
     color:black;
+    text-shadow:none;
 }
 
 .op:hover{

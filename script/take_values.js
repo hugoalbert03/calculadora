@@ -1,5 +1,4 @@
-var tela = document.getElementById("visor").innerHTML;
-
+var tela = document.getElementById("visor").value
 let clear = document.getElementById("clear")
 var v1 = undefined;
 var v2 = undefined;
@@ -45,4 +44,19 @@ function btn9(){
 }
 
 function confirm(){
+
+}
+
+function clean(){
+    var char = document.getElementById("visor").value.length
+    char 
+
+}
+
+function cleanAll(){
+    document.getElementById("visor").innerHTML = ""
+}
+
+function point(){
+    document.getElementById("visor").innerHTML += ","
 }

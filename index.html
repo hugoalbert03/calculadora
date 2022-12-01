@@ -8,85 +8,90 @@
         <title></title>
     </head>
     <body>
-        <section>
-            <div id="vcamp">
-                <textarea id="visor" style="font-size:30pt;" desabled=""></textarea>
-            </div>
-            <div style="text-align:center;">
-                <input type="button" id="vw" value="Modo Digitação" onclick="view()">
-            </div>
-            <table id="botoes">
-                <tr>
-                    <td>
-                        <button class="op" id="div">/</button>
-                    </td>
-                    <td>
-                        <button class="op" id="mod">%</button>
-                    </td>
-                    <td colspan="2">
-                        <button id="clear" onclick="clean()">&#x2190;</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="numb" onclick="btn7()">7</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn8()">8</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn9()">9</button>
-                    </td>
-                    <td>
-                        <button class="op" id="adc">+</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="numb" onclick="btn4()">4</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn5()">5</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn6()">6</button>
-                    </td>
-                    <td>
-                        <button class="op" id="sub">-</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="numb" onclick="btn1()">1</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn2()">2</button>
-                    </td>
-                    <td>
-                        <button class="numb" onclick="btn3()">3</button>
-                    </td>
-                    <td>
-                        <button class="op" id=""mult>*</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="numb" onclick="btn0()">0</button>
-                    </td>
-                    <td>
-                        <button class="numb">.</button>
-                    </td>
-                    <td colspan="2">
-                        <button id="confirm" onclick="confirm()">=</button>
-                    </td>
-                    
-                </tr>
-            </table>
-            <footer>
-                <script src="script/aux_css.js"></script>
-                <script src="script/take_values.js"></script>
-                <script src="script/forml.js"></script>
-            </footer>
-        </section>
+        <form>
+            <section>
+                <div id="vcamp">
+                    <textarea id="visor" style="font-size:30pt;"></textarea>
+                </div>
+                <div style="text-align:center;">
+                    <input type="button" id="vw" value="Modo Digitação" onclick="view()">
+                </div>
+                <table id="botoes">
+                    <tr>
+                        <td>
+                            <button type="button" class="op" id="div">/</button>
+                        </td>
+                        <td>
+                            <button type="button" class="op" id="mod">%</button>
+                        </td>
+                        <td>
+                            <button type="reset" class="clean" onclick="cleanAll()">C</button>
+                        </td>
+                        <td>
+                            <button type="button" class="clean" id="clear" onclick="clean()">&#x2190;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="numb" onclick="btn7()">7</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn8()">8</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn9()">9</button>
+                        </td>
+                        <td>
+                            <button type="button" class="op" id="adc">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="numb" onclick="btn4()">4</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn5()">5</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn6()">6</button>
+                        </td>
+                        <td>
+                            <button type="button" class="op" id="sub">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="numb" onclick="btn1()">1</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn2()">2</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn3()">3</button>
+                        </td>
+                        <td>
+                            <button type="button" class="op" id=""mult>*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="numb" onclick="point()">.</button>
+                        </td>
+                        <td>
+                            <button type="button" class="numb" onclick="btn0()">0</button>
+                        </td>
+                        <td colspan="2">
+                            <button type="button" id="confirm" onclick="confirm()">=</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+                <footer>
+                    <script src="script/aux_css.js"></script>
+                    <script src="script/take_values.js"></script>
+                    <script src="script/forml.js"></script>
+                </footer>
+            </section>
+        </form>
     </body>
 </html>

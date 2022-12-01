@@ -4,9 +4,9 @@ let visor = document.getElementById("vcamp")
 vw.style.background = "red"
 vw.style.color = "white"
 
-vs.onclick = function(){
+/* vs.onclick = function(){
     
-}
+} */
 function view(){
     let desl = 0
     if(vw.value == "Modo Digitação"){
@@ -15,6 +15,7 @@ function view(){
         vw.style.background = "green"
         vw.style.color = "white"
         botoes.style.display = "none"
+        /* vw.style["user-select"] = "none" */
     }else{
         vw.value = "Modo Digitação"
         desl = "0"
