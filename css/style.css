@@ -94,3 +94,8 @@ button,#visor{
     background: -webkit-linear-gradient(270deg,#f3f300,#d6d600,#f3f300);
     /* background-color: #adad00; */
 }
+
+#tipagem{
+    color:white;
+    text-align:center
+}
