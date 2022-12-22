@@ -29,7 +29,7 @@ table{
 }
 
 #vcamp{
-    padding:2rem 1rem;
+    padding:0.7rem 1rem;
 }
 
 /*Botões*/
@@ -63,7 +63,7 @@ button,#visor{
     height:5rem;
     border:solid 1px transparent ;
     border-radius:3px;
-    font-size:16pt;
+    font-size:22pt;
 }
 
 .numb,.op,.clean,#confirm{
@@ -98,4 +98,13 @@ button,#visor{
 #tipagem{
     color:white;
     text-align:center
+}
+
+#vw{
+    padding:0.5rem 1rem;
+    border-radius:5px;
+}
+
+#vwCamp{
+    padding:1rem;
 }
