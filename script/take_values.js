@@ -1,8 +1,7 @@
-var tela = document.getElementById("visor").value
+var tela = document.getElementById("visor")
 let clear = document.getElementById("clear")
 var v1 = undefined;
 var v2 = undefined;
-
 function btn0(){
     document.getElementById("visor").innerHTML += 0
 }
@@ -25,6 +24,7 @@ function btn4(){
 
 function btn5(){
     document.getElementById("visor").innerHTML += 5
+    
 }
 
 function btn6(){
@@ -43,18 +43,17 @@ function btn9(){
     document.getElementById("visor").innerHTML += 9
 }
 
-function confirm(){
-
-}
-
-function clean(){
-    var char = document.getElementById("visor").value.length
-    char 
-
+function cl(){
+    const vals = document.getElementById("visor").innerHTML
+    const VlLimp = vals.replace(vals[vals.length -1],"")
+    tela.innerHTML = VlLimp
+    if(vals.length == 1){
+        tela.innerHTML = 0
+    }
 }
 
 function cleanAll(){
-    document.getElementById("visor").innerHTML = ""
+    document.getElementById("visor").innerHTML = 0
 }
 
 function point(){

@@ -1,3 +1,3 @@
-document.getElementById("adc").onclick = function(){
-    
+function enter(){
+    console.log("Olá Mundo!")
 }
