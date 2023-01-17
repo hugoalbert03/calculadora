@@ -8,6 +8,7 @@ function btn0(){
 
 function btn1(){
     document.getElementById("visor").innerHTML += 1
+    if(tela == 0){}
 }
 
 function btn2(){

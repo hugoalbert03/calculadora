@@ -15,7 +15,7 @@
                     <textarea id="visor" style="font-size:30pt;"></textarea>
                 </div>
                 <div style="text-align:center;" id="vwCamp">
-                    <input type="button" id="vw" value="Modo Digitação" onclick="view()">
+                    <input type="reset" id="vw" value="Modo Digitação" onclick="view()">
                 </div>
                 <table id="botoes">
                     <tr>
@@ -91,6 +91,9 @@
                     <script src="script/aux_css.js"></script>
                     <script src="script/take_values.js"></script>
                     <script src="script/forml.js"></script>
+                    <script>
+                        window.document.getElementById("visor").innerHTML = 0
+                    </script>
                 </footer>
             </section>
         </form>
