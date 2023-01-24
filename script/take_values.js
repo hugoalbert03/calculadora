@@ -2,6 +2,30 @@ var tela = document.getElementById("visor")
 let clear = document.getElementById("clear")
 var v1 = undefined;
 var v2 = undefined;
+
+//Botões de Operadores
+function adc(){
+    window.document.getElementById("visor").innerHTML += "+"
+}
+
+function subt(){
+    window.document.getElementById("visor").innerHTML += "-"
+}
+
+function mut(){
+    window.document.getElementById("visor").innerHTML += "*"
+}
+
+function dv(){
+    window.document.getElementById("visor").innerHTML += "/"
+}
+
+function mod(){
+    window.document.getElementById("visor").innerHTML += "%"
+}
+
+//Botões de número
+
 function btn0(){
     document.getElementById("visor").innerHTML += 0
 }
