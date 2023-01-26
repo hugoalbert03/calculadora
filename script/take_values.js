@@ -5,23 +5,45 @@ var v2 = undefined;
 
 //Botões de Operadores
 function adc(){
-    window.document.getElementById("visor").innerHTML += "+"
+    
+    if(tela.value ==! Number || tela.value.length == 0){
+        tela.innerHTML = ""
+    }else{
+        window.document.getElementById("visor").innerHTML += "+"
+    }
 }
 
 function subt(){
-    window.document.getElementById("visor").innerHTML += "-"
+    if(tela.value ==! Number || tela.value.length == 0){
+        tela.innerHTML = ""
+    }else{
+        window.document.getElementById("visor").innerHTML += "-"
+    }
 }
 
 function mut(){
-    window.document.getElementById("visor").innerHTML += "*"
+    if(tela.value ==! Number || tela.value.length == 0){
+        tela.innerHTML = ""
+    }else{
+        window.document.getElementById("visor").innerHTML += "*"
+    }
+    
 }
 
 function dv(){
-    window.document.getElementById("visor").innerHTML += "/"
+    if(tela.value ==! Number || tela.value.length == 0){
+        tela.innerHTML = ""
+    }else{
+        window.document.getElementById("visor").innerHTML += "/"
+    }
 }
 
 function mod(){
-    window.document.getElementById("visor").innerHTML += "%"
+    if(tela.value ==! Number || tela.value.length == 0){
+        tela.innerHTML = ""
+    }else{
+        window.document.getElementById("visor").innerHTML += "%"
+    }
 }
 
 //Botões de número
@@ -72,13 +94,13 @@ function cl(){
     const vals = document.getElementById("visor").innerHTML
     const VlLimp = vals.replace(vals[vals.length -1],"")
     tela.innerHTML = VlLimp
-    if(vals.length == 1){
+ /*   if(vals.length == 1){
         tela.innerHTML = 0
-    }
+    } */
 }
 
 function cleanAll(){
-    document.getElementById("visor").innerHTML = 0
+   document.getElementById("visor").innerHTML = ""
 }
 
 function point(){
